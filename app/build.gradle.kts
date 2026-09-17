@@ -32,10 +32,10 @@ val releaseStoreFile = releaseSigningValues["DUO_RELEASE_STORE_FILE"]?.let { con
 }
 
 android {
-    namespace = "com.jake.duolauncher"
+    namespace = "kr.me.nulld.iduohome"
     compileSdk = 36
     defaultConfig {
-        applicationId = "com.jake.duolauncher"
+        applicationId = "kr.me.nulld.iduohome"
         minSdk = 31
         targetSdk = 36
         versionCode = 30
@@ -64,6 +64,10 @@ android {
         }
     }
     buildFeatures { compose = true }
+    lint {
+        // Dependency upgrades stay pinned to the toolchain tested by this project.
+        disable += "GradleDependency"
+    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17

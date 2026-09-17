@@ -1,0 +1,20 @@
+<resources>
+    <string name="home_select">선택</string>
+    <string name="home_select_item">홈 화면 항목 선택</string>
+    <plurals name="home_selected_count"><item quantity="other">%1$d개 선택됨</item></plurals>
+    <string name="home_remove">홈 화면에서 삭제</string>
+    <string name="home_add">홈 화면에 추가</string>
+    <string name="library_uninstall">설치 제거</string>
+    <string name="library_uninstall_unavailable">%1$s의 설치 제거 화면을 열 수 없습니다. 앱 설정을 확인해 주세요.</string>
+    <string name="home_settings">설정</string>
+    <string name="home_widgets">위젯</string>
+    <string name="home_create_folder">폴더 만들기</string>
+    <string name="home_done">완료</string>
+    <string name="home_drag_resize">드래그하여 위젯 크기 조절</string>
+    <string name="home_grow">크기 늘리기</string>
+    <string name="home_shrink">크기 줄이기</string>
+    <string name="home_no_room">배치할 공간이 부족합니다</string>
+    <string name="dune_wallpaper_description">iDuoHome 사구 — 화면에 맞춰 표시되는 런처 배경입니다.</string>
+    <string name="shade_service_label">iDuoHome 알림창 제스처</string>
+    <string name="shade_service_description">iDuoHome의 홈 화면 제스처로 화면을 잠그거나 시스템 알림창 및 빠른 설정을 열 수 있습니다. 화면 내용을 읽거나 다른 앱의 활동을 관찰하지 않습니다.</string>
+</resources>

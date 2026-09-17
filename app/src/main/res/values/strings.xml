@@ -1,5 +1,23 @@
 <resources>
-    <string name="dune_wallpaper_description">Duo dunes — the launcher’s landscape, sized for your display.</string>
-    <string name="shade_service_label">Duo Launcher shade gestures</string>
-    <string name="shade_service_description">Allows Duo Launcher’s Home screen gestures to lock the screen and open the system notifications and Quick Settings panels. It does not read screen content or observe activity in other apps.</string>
+    <string name="home_select">Select</string>
+    <string name="home_select_item">Select home item</string>
+    <plurals name="home_selected_count">
+        <item quantity="one">%1$d selected</item>
+        <item quantity="other">%1$d selected</item>
+    </plurals>
+    <string name="home_remove">Remove from Home</string>
+    <string name="home_add">Add to Home</string>
+    <string name="library_uninstall">Uninstall</string>
+    <string name="library_uninstall_unavailable">Cannot open uninstall for %1$s. Check its app settings.</string>
+    <string name="home_settings">Settings</string>
+    <string name="home_widgets">Widgets</string>
+    <string name="home_create_folder">Create folder</string>
+    <string name="home_done">Done</string>
+    <string name="home_drag_resize">Drag to resize widget</string>
+    <string name="home_grow">Increase size</string>
+    <string name="home_shrink">Decrease size</string>
+    <string name="home_no_room">Not enough space</string>
+    <string name="dune_wallpaper_description">iDuoHome dunes — the launcher’s landscape, sized for your display.</string>
+    <string name="shade_service_label">iDuoHome shade gestures</string>
+    <string name="shade_service_description">Allows iDuoHome’s Home screen gestures to lock the screen and open the system notifications and Quick Settings panels. It does not read screen content or observe activity in other apps.</string>
 </resources>

@@ -1,6 +1,6 @@
 # Public release process
 
-Duo Launcher requires Android API 31 or newer and builds with Java 17. A fresh source export can
+iDuoHome requires Android API 31 or newer and builds with Java 17. A fresh source export can
 build the debug APK, run local unit tests and lint, and assemble an unsigned optimized release:
 
 ```sh
@@ -27,7 +27,7 @@ export DUO_RELEASE_KEY_PASSWORD='...'
 ```
 
 The public release key is separate from Android's debug key. Because both variants intentionally
-use `com.jake.duolauncher`, Android will not install one as an update to an installation signed by
+use `kr.me.nulld.iduohome`, Android will not install one as an update to an installation signed by
 the other key. Preserve an existing configured debug installation; test the public release on a
 separate device or disposable emulator unless a deliberate migration has been planned.
 
@@ -43,8 +43,8 @@ private paths, key files, non-image files under `docs/images`, or a destination 
 exists:
 
 ```sh
-./scripts/export-public-source.sh /tmp/DuoLauncher-public
-./scripts/check-public-source.sh /tmp/DuoLauncher-public
+./scripts/export-public-source.sh /tmp/iDuoHome-public
+./scripts/check-public-source.sh /tmp/iDuoHome-public
 ```
 
 The checker validates a pristine exported tree. Running it with no argument in the private working

@@ -3,7 +3,7 @@ set -euo pipefail
 
 repository_root=$(cd "$(dirname "$0")/.." && pwd -P)
 allowlist="$repository_root/PUBLIC-FILES"
-destination=${1:-"$repository_root/dist/DuoLauncher-0.15.0-beta01-source"}
+destination=${1:-"$repository_root/dist/iDuoHome-0.15.0-beta01-source"}
 
 if [[ ! -f "$allowlist" || -L "$allowlist" ]]; then
     echo "PUBLIC-FILES must be a regular file inside the repository." >&2

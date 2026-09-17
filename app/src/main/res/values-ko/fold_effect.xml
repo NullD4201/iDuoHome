@@ -1,0 +1,8 @@
+<resources>
+    <string name="fold_effect_title">접기·펼치기 효과</string>
+    <string name="fold_effect_enable">반투명 유리 전환 효과</string>
+    <string name="fold_effect_description">홈에서 화면을 접거나 펼칠 때 원근감과 흐림 효과를 적용합니다. 화면 전환은 Android가 제어합니다. 시스템 배경화면과 다른 앱에는 적용되지 않습니다. Android의 애니메이션 삭제 설정을 따릅니다.</string>
+    <string name="fold_effect_follow_angle">지원 시 접힘 각도에 맞추기</string>
+    <string name="fold_effect_angle_description">기기가 연속적인 힌지 각도를 제공하면 효과에 반영합니다. 그렇지 않으면 접힘 상태나 화면이 바뀔 때 짧은 전환 효과를 보여 줍니다. 일부 갤럭시 펌웨어는 접힘·중간·펼침 상태만 제공합니다.</string>
+    <string name="fold_effect_strength">효과 강도</string>
+</resources>

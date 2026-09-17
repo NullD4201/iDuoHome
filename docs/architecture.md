@@ -1,10 +1,10 @@
 # Contributor code map
 
-Duo is a Kotlin/Jetpack Compose Android Home application with one normal app module. It owns its Home content, dock, editing UI and widget hosts. Android owns the secure lock screen, recents, notification panels and system app transitions. Google owns the content and input inside its Discover feed.
+iDuoHome is a Kotlin/Jetpack Compose Android Home application with one normal app module. It owns its Home content, dock, editing UI and widget hosts. Android owns the secure lock screen, recents, notification panels and system app transitions. Google owns the content and input inside its Discover feed.
 
 ## Where to start
 
-All paths below are relative to `app/src/main/java/com/jake/duolauncher/`.
+All paths below are relative to `app/src/main/java/kr/me/nulld/iduohome/`.
 
 | Area | Entry points | Responsibility |
 | --- | --- | --- |
@@ -22,7 +22,7 @@ All paths below are relative to `app/src/main/java/com/jake/duolauncher/`.
 
 `LauncherModel` exposes a `StateFlow<LauncherState>`. App discovery happens off the main thread; installed-app identities include their Android profile. A temporarily unavailable package or paused profile must not silently erase its placements.
 
-Each ordinary Home page has a four-column, six-row grid. Apps occupy cells; widgets occupy explicit rectangles with durable slot identities. The dock has four positions and rejects incoming apps when full. Moving a shortcut between Home and the dock moves that placement; All apps remains the installed-app catalog.
+Each ordinary Home page has a four-column, six-row grid. Apps occupy cells; widgets occupy explicit rectangles with durable slot identities. The dock persists four to six fixed positions and rejects incoming apps when full; recent launches are not part of it. Moving a shortcut between Home and the dock moves that placement; All apps remains the installed-app catalog.
 
 Unfolded navigation uses overlapping pairs: leading workspace + Home 1, Home 1 + Home 2, and so on. The leading workspace has separate `leadingSlots` and durable widget page `-1`; it disappears from the cover view without deleting its contents. **Pager page `-1` separately means Discover.** Use the address helpers in `HomeEditing.kt` rather than treating negative cell indices as missing values.
 
@@ -39,6 +39,8 @@ Widget size publication uses measured content with `updateAppWidgetOptions`, pos
 ## Discover ownership
 
 The live path keeps a persistent Google window and live Home graphics layers. Healthy Discover backing remains transparent; a recovery surface appears while a status message is present, including a delayed connection or an error. Google reports feed progress but owns native feed gestures, so a timeout or progress reversal is not proof that a finger was released.
+
+The live Discover host belongs to the current Main activity's Android task. Selecting iDuoHome as the default Home can create a separate Home task beside an existing app task; preparation replaces a host from the old task before connecting the new Home.
 
 `DiscoverBounds.kt` contains an unsupported alignment-hint workaround scoped to audited Window Extensions versions 8–10. Other versions retain normal alignment. This avoids an additional vendor task-fragment transition in the tested configuration; it is not a public SystemUI animation API or a compatibility guarantee. Keep the version guard, host-start recovery and fallback path when changing embedding behavior.
 

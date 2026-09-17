@@ -4,6 +4,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
     <queries>
         <package android:name="com.google.android.googlequicksearchbox" />
         <intent>
@@ -43,20 +44,25 @@
             <category android:name="com.anddoes.launcher.THEME" />
         </intent>
     </queries>
-    <application android:label="Duo Launcher" android:icon="@drawable/ic_launcher"
+    <application android:label="iDuoHome" android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher"
         android:name=".DuoApplication"
+        android:localeConfig="@xml/locales_config"
+        tools:targetApi="33"
         android:hardwareAccelerated="true"
-        android:theme="@style/Theme.Duo" android:allowBackup="false" android:supportsRtl="true">
+        android:theme="@style/Theme.Duo" android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="false" android:supportsRtl="true">
         <property android:name="android.window.PROPERTY_ACTIVITY_EMBEDDING_SPLITS_ENABLED" android:value="true" />
         <property android:name="android.window.PROPERTY_ACTIVITY_EMBEDDING_ALLOW_SYSTEM_OVERRIDE" android:value="false" />
         <activity android:name=".DiscoverActivity" android:exported="false"
             android:theme="@style/Theme.Duo.Discover"
-            android:taskAffinity="com.jake.duolauncher.discover" android:excludeFromRecents="true"
+            android:taskAffinity="kr.me.nulld.iduohome.discover" android:excludeFromRecents="true"
             android:resizeableActivity="true" />
         <activity android:name=".DiscoverFeedActivity" android:theme="@style/Theme.Duo.Discover" android:exported="false" android:resizeableActivity="true" />
         <activity android:name=".LiveDiscoverActivity" android:theme="@style/Theme.Duo.LiveDiscover"
             android:exported="false" android:resizeableActivity="true" />
-        <service android:name=".DuneWallpaperService" android:label="Duo dunes"
+        <service android:name=".DuneWallpaperService" android:label="@string/settings_dunes_name"
             android:permission="android.permission.BIND_WALLPAPER" android:exported="true">
             <intent-filter><action android:name="android.service.wallpaper.WallpaperService" /></intent-filter>
             <meta-data android:name="android.service.wallpaper" android:resource="@xml/dune_wallpaper" />

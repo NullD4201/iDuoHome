@@ -1,6 +1,6 @@
 # Data and permissions
 
-Duo Launcher stores settings, Home layout, widget placement, and selected wallpaper locally. It has no account system, backend, advertising, analytics SDK, or automatic crash reporting.
+iDuoHome stores settings, Home layout, widget placement, and selected wallpaper locally. It has no account system, backend, advertising, analytics SDK, or automatic crash reporting.
 
 ## Data used on your device
 
@@ -18,7 +18,7 @@ Android controls widget-binding approval and Home-app selection. Providers can r
 
 ## Google and other apps
 
-Discover and Google search use the installed Google app. Apps, search results, articles, and widgets may use their providers' network services and accounts. Those apps' policies and settings apply; Duo does not proxy their traffic or collect their content.
+Discover and Google search use the installed Google app. Apps, search results, articles, and widgets may use their providers' network services and accounts. Those apps' policies and settings apply; iDuoHome does not proxy their traffic or collect their content.
 
 ## Export, reports, and removal
 
@@ -26,4 +26,4 @@ A layout export is created only when you choose Save in Backup and select a dest
 
 There is no automatic diagnostic upload. Screenshots and logs you manually attach to issues may contain personal information, widget content, account names, or work data. Review them first.
 
-Uninstalling or clearing storage removes Duo's local settings, photos, and widget bindings. Exported files remain where you saved them. Android and device vendors may provide their own diagnostics independently of Duo.
+Uninstalling or clearing storage removes iDuoHome's local settings, photos, and widget bindings. Exported files remain where you saved them. Android and device vendors may provide their own diagnostics independently of iDuoHome.

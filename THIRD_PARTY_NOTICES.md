@@ -1,6 +1,6 @@
 # Third-party notices
 
-Duo Launcher source uses the MIT license in LICENSE. Dependencies retain their own licenses. The app includes this notice and the Apache 2.0 license text under `assets/licenses/`.
+iDuoHome source uses the MIT license in LICENSE. Dependencies retain their own licenses. The app includes this notice and the Apache 2.0 license text under `assets/licenses/`.
 
 | Component family | Source | License |
 | --- | --- | --- |
@@ -12,6 +12,9 @@ Duo Launcher source uses the MIT license in LICENSE. Dependencies retain their o
 | Guava ListenableFuture | https://github.com/google/guava | Apache 2.0 |
 | JSpecify annotations | https://github.com/jspecify/jspecify | Apache 2.0 |
 | Gradle wrapper and build tooling | https://github.com/gradle/gradle | Apache 2.0; build-tool distributions include their additional notices |
+| Folduo fold projection and optical equations | https://github.com/bunkaich/Folduo/tree/c9e5976cf1d5176652fcf0fc984bb5ec86751d29 | MIT; Copyright (c) 2026 bunkaich |
+
+The Home fold effect adapts Folduo's `GlassProjection`, `FoldPolicy.blur`, and shader projection. The license is bundled at `assets/licenses/MIT-Folduo.txt`. iDuoHome uses Android's GPU blur over its own live Home layer; Folduo's Shizuku bridge, screen capture, wallpaper helper, and private Samsung display control are not included.
 
 The Gradle dependency graph records the resolved artifact versions. Test and build tools are not application features; their upstream distributions provide their respective notices.
 

@@ -1,0 +1,8 @@
+<resources>
+    <string name="fold_effect_title">Fold transition</string>
+    <string name="fold_effect_enable">Frosted-glass fold effect</string>
+    <string name="fold_effect_description">Add depth and blur when folding or unfolding on Home. Android still controls switching displays. System wallpapers and other apps are unaffected. Respects Android’s Remove animations setting.</string>
+    <string name="fold_effect_follow_angle">Follow hinge angle when available</string>
+    <string name="fold_effect_angle_description">Uses continuous hinge readings when the device provides them. Otherwise, plays a short transition when the fold state or screen changes. Some Galaxy firmware reports only closed, half-open, and open states.</string>
+    <string name="fold_effect_strength">Effect strength</string>
+</resources>

@@ -4,13 +4,13 @@
             android:name=".FoldMotionActivity"
             android:excludeFromRecents="true"
             android:exported="true"
-            android:label="Duo Fold Motion Lab"
+            android:label="iDuoHome Fold Motion Lab"
             android:resizeableActivity="true" />
         <activity
             android:name=".FoldProbeActivity"
             android:excludeFromRecents="true"
             android:exported="true"
-            android:label="Duo Fold Probe"
+            android:label="iDuoHome Fold Probe"
             android:resizeableActivity="true" />
     </application>
 </manifest>
